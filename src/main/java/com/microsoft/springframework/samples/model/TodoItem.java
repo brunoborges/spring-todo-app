@@ -1,23 +1,25 @@
 /**
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License. See LICENSE in the project root for
- * license information.
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. See
+ * LICENSE in the project root for license information.
  */
 package com.microsoft.springframework.samples.model;
 
+import java.util.Objects;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 import com.microsoft.azure.spring.data.cosmosdb.core.mapping.Document;
 
-import java.util.Objects;
-
-@Document
+@Document(collection = "TodoItem")
+@DynamoDBTable(tableName = "TodoItem")
 public class TodoItem {
+
     private String id;
     private String description;
     private String owner;
     private boolean finished;
 
-    public TodoItem() {
-    }
+    public TodoItem() {}
 
     public TodoItem(String id, String description, String owner) {
         this.description = description;
@@ -26,6 +28,7 @@ public class TodoItem {
         this.finished = false;
     }
 
+    @DynamoDBAttribute
     public boolean isFinished() {
         return finished;
     }
@@ -34,6 +37,7 @@ public class TodoItem {
         this.finished = finished;
     }
 
+    @DynamoDBAttribute
     public String getDescription() {
         return description;
     }
@@ -42,6 +46,7 @@ public class TodoItem {
         this.description = description;
     }
 
+    @DynamoDBAttribute
     public String getOwner() {
         return owner;
     }
@@ -50,6 +55,7 @@ public class TodoItem {
         this.owner = owner;
     }
 
+    @DynamoDBHashKey
     public String getID() {
         return id;
     }
@@ -81,7 +87,8 @@ public class TodoItem {
     public String toString() {
         if (id != null)
             return id + ": " + description;
-        else return description;
+        else
+            return description;
     }
 }
 

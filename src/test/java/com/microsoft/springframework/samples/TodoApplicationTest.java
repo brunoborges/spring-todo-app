@@ -5,24 +5,26 @@
  */
 package com.microsoft.springframework.samples;
 
-import static org.junit.Assert.*;
-import static org.mockito.BDDMockito.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.BDDMockito.willAnswer;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.forwardedUrl;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.forwardedUrl;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
-
 import com.microsoft.springframework.samples.controller.TodoListController;
 import com.microsoft.springframework.samples.dao.ITodoItemRepository;
+import com.microsoft.springframework.samples.model.TodoItem;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,9 +37,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-
-import com.microsoft.springframework.samples.dao.TodoItemRepositoryCosmosDB;
-import com.microsoft.springframework.samples.model.TodoItem;
 
 @RunWith(SpringRunner.class)
 @TestPropertySource(locations = "classpath:test.properties")
@@ -54,7 +53,7 @@ public class TodoApplicationTest {
     private MockMvc mockMvc;
 
     @MockBean
-    private ITodoItemRepository todoItemRepositoryCosmosDB;
+    private ITodoItemRepository todoItemRepository;
 
     @Before
     public void setUp() {
@@ -62,7 +61,7 @@ public class TodoApplicationTest {
         repository.put(mockItemA.getID(), mockItemA);
         repository.put(mockItemB.getID(), mockItemB);
 
-        given(this.todoItemRepositoryCosmosDB.save(any(TodoItem.class))).willAnswer((InvocationOnMock invocation) -> {
+        given(this.todoItemRepository.save(any(TodoItem.class))).willAnswer((InvocationOnMock invocation) -> {
             final TodoItem item = invocation.getArgument(0);
             if (repository.containsKey(item.getID())) {
                 throw new Exception("Conflict.");
@@ -71,12 +70,12 @@ public class TodoApplicationTest {
             return item;
         });
 
-        given(this.todoItemRepositoryCosmosDB.findById(any(String.class))).willAnswer((InvocationOnMock invocation) -> {
+        given(this.todoItemRepository.findById(any(String.class))).willAnswer((InvocationOnMock invocation) -> {
             final String id = invocation.getArgument(0);
             return Optional.of(repository.get(id));
         });
 
-        given(this.todoItemRepositoryCosmosDB.findAll()).willAnswer((InvocationOnMock invocation) -> {
+        given(this.todoItemRepository.findAll()).willAnswer((InvocationOnMock invocation) -> {
             return new ArrayList<TodoItem>(repository.values());
         });
 
@@ -87,7 +86,7 @@ public class TodoApplicationTest {
             }
             repository.remove(id);
             return null;
-        }).given(this.todoItemRepositoryCosmosDB).deleteById(any(String.class));
+        }).given(this.todoItemRepository).deleteById(any(String.class));
     }
 
     @After

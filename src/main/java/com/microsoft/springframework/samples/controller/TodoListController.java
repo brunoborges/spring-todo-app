@@ -5,28 +5,31 @@
  */
 package com.microsoft.springframework.samples.controller;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 import com.microsoft.springframework.samples.dao.ITodoItemRepository;
 import com.microsoft.springframework.samples.model.TodoItem;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TodoListController {
 
     @Autowired
-    @Qualifier("local")
     private ITodoItemRepository todoItemRepository;
 
-    public TodoListController() {
-    }
-
-    @RequestMapping("/home")
+    @GetMapping("/home")
     public Map<String, Object> home() {
         System.out.println(new Date() + " ======= /home =======");
         final Map<String, Object> model = new HashMap<String, Object>();
@@ -38,8 +41,7 @@ public class TodoListController {
     /**
      * HTTP GET
      */
-    @RequestMapping(value = "/api/todolist/{index}",
-            method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = "/api/todolist/{index}", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> getTodoItem(@PathVariable("index") String index) {
         System.out.println(new Date() + " GET ======= /api/todolist/{" + index
                 + "} =======");
@@ -53,7 +55,7 @@ public class TodoListController {
     /**
      * HTTP GET ALL
      */
-    @RequestMapping(value = "/api/todolist", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = "/api/todolist", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> getAllTodoItems() {
         System.out.println(new Date() + " GET ======= /api/todolist =======");
         try {
@@ -66,13 +68,13 @@ public class TodoListController {
     /**
      * HTTP POST NEW ONE
      */
-    @RequestMapping(value = "/api/todolist", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/api/todolist", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> addNewTodoItem(@RequestBody TodoItem item) {
         System.out.println(new Date() + " POST ======= /api/todolist ======= " + item);
         try {
             item.setID(UUID.randomUUID().toString());
             todoItemRepository.save(item);
-            return new ResponseEntity<String>("Entity created", HttpStatus.CREATED);
+            return new ResponseEntity<String>(item.getID(), HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<String>("Entity creation failed", HttpStatus.CONFLICT);
         }
@@ -81,7 +83,7 @@ public class TodoListController {
     /**
      * HTTP PUT UPDATE
      */
-    @RequestMapping(value = "/api/todolist", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping(value = "/api/todolist", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> updateTodoItem(@RequestBody TodoItem item) {
         System.out.println(new Date() + " PUT ======= /api/todolist ======= " + item);
         try {
@@ -96,7 +98,7 @@ public class TodoListController {
     /**
      * HTTP DELETE
      */
-    @RequestMapping(value = "/api/todolist/{id}", method = RequestMethod.DELETE)
+    @DeleteMapping(value = "/api/todolist/{id}")
     public ResponseEntity<String> deleteTodoItem(@PathVariable("id") String id) {
         System.out.println(new Date() + " DELETE ======= /api/todolist/{" + id
                 + "} ======= ");
@@ -108,4 +110,5 @@ public class TodoListController {
         }
 
     }
+
 }
