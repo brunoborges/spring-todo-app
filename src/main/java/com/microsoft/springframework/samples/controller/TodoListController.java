@@ -5,9 +5,10 @@
  */
 package com.microsoft.springframework.samples.controller;
 
-import com.microsoft.springframework.samples.dao.TodoItemRepository;
+import com.microsoft.springframework.samples.dao.ITodoItemRepository;
 import com.microsoft.springframework.samples.model.TodoItem;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +20,8 @@ import java.util.*;
 public class TodoListController {
 
     @Autowired
-    private TodoItemRepository todoItemRepository;
+    @Qualifier("local")
+    private ITodoItemRepository todoItemRepository;
 
     public TodoListController() {
     }

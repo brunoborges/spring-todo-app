@@ -7,8 +7,11 @@ package com.microsoft.springframework.samples.dao;
 
 import com.microsoft.springframework.samples.model.TodoItem;
 import com.microsoft.azure.spring.data.cosmosdb.repository.DocumentDbRepository;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface TodoItemRepository extends DocumentDbRepository<TodoItem, String> {
+@Profile("!local")
+@Repository("cosmosdb")
+public interface TodoItemRepositoryCosmosDB extends DocumentDbRepository<TodoItem, String>, ITodoItemRepository {
 }

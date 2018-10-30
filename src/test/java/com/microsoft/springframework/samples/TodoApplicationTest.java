@@ -22,6 +22,7 @@ import java.util.Map;
 import java.util.Optional;
 
 import com.microsoft.springframework.samples.controller.TodoListController;
+import com.microsoft.springframework.samples.dao.ITodoItemRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,7 +36,7 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.microsoft.springframework.samples.dao.TodoItemRepository;
+import com.microsoft.springframework.samples.dao.TodoItemRepositoryCosmosDB;
 import com.microsoft.springframework.samples.model.TodoItem;
 
 @RunWith(SpringRunner.class)
@@ -53,7 +54,7 @@ public class TodoApplicationTest {
     private MockMvc mockMvc;
 
     @MockBean
-    private TodoItemRepository todoItemRepository;
+    private ITodoItemRepository todoItemRepositoryCosmosDB;
 
     @Before
     public void setUp() {
@@ -61,7 +62,7 @@ public class TodoApplicationTest {
         repository.put(mockItemA.getID(), mockItemA);
         repository.put(mockItemB.getID(), mockItemB);
 
-        given(this.todoItemRepository.save(any(TodoItem.class))).willAnswer((InvocationOnMock invocation) -> {
+        given(this.todoItemRepositoryCosmosDB.save(any(TodoItem.class))).willAnswer((InvocationOnMock invocation) -> {
             final TodoItem item = invocation.getArgument(0);
             if (repository.containsKey(item.getID())) {
                 throw new Exception("Conflict.");
@@ -70,12 +71,12 @@ public class TodoApplicationTest {
             return item;
         });
 
-        given(this.todoItemRepository.findById(any(String.class))).willAnswer((InvocationOnMock invocation) -> {
+        given(this.todoItemRepositoryCosmosDB.findById(any(String.class))).willAnswer((InvocationOnMock invocation) -> {
             final String id = invocation.getArgument(0);
             return Optional.of(repository.get(id));
         });
 
-        given(this.todoItemRepository.findAll()).willAnswer((InvocationOnMock invocation) -> {
+        given(this.todoItemRepositoryCosmosDB.findAll()).willAnswer((InvocationOnMock invocation) -> {
             return new ArrayList<TodoItem>(repository.values());
         });
 
@@ -86,7 +87,7 @@ public class TodoApplicationTest {
             }
             repository.remove(id);
             return null;
-        }).given(this.todoItemRepository).deleteById(any(String.class));
+        }).given(this.todoItemRepositoryCosmosDB).deleteById(any(String.class));
     }
 
     @After
