@@ -1,0 +1,961 @@
+executing mvnw instead of mvn
+/Users/bruno
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T11:33:14-07:00)
+Maven home: /Users/bruno/.m2/wrapper/dists/apache-maven-3.5.4-bin/jl1qqhdeineh9qg83dtj7i91c/apache-maven-3.5.4
+Java version: 1.8.0_172, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+Default locale: en_CA, platform encoding: UTF-8
+OS name: "mac os x", version: "10.14", arch: "x86_64", family: "mac"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from /Users/bruno/.m2/wrapper/dists/apache-maven-3.5.4-bin/jl1qqhdeineh9qg83dtj7i91c/apache-maven-3.5.4/conf/settings.xml
+[DEBUG] Reading user settings from /Users/bruno/.m2/settings.xml
+[DEBUG] Reading global toolchains from /Users/bruno/.m2/wrapper/dists/apache-maven-3.5.4-bin/jl1qqhdeineh9qg83dtj7i91c/apache-maven-3.5.4/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /Users/bruno/.m2/toolchains.xml
+[DEBUG] Using local repository at /Users/bruno/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/bruno/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project com.microsoft.springframework.samples:spring-todo-app:jar:2.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-starter-parent:pom:2.1.0.RC1: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-dependencies:pom:2.1.0.RC1: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Resolving plugin prefix spring-boot from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix spring-boot to org.springframework.boot:spring-boot-maven-plugin from POM com.microsoft.springframework.samples:spring-todo-app:jar:2.0-SNAPSHOT
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.microsoft.springframework.samples:spring-todo-app:jar:2.0-SNAPSHOT
+[DEBUG] Tasks:   [spring-boot:run]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] -------< com.microsoft.springframework.samples:spring-todo-app >--------
+[INFO] Building spring-todo-app 2.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Resolving plugin prefix spring-boot from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix spring-boot to org.springframework.boot:spring-boot-maven-plugin from POM com.microsoft.springframework.samples:spring-todo-app:jar:2.0-SNAPSHOT
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.microsoft.springframework.samples:spring-todo-app:2.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [test]
+[DEBUG] Repositories (dependencies): [spring-snapshots (https://repo.spring.io/snapshot, default, releases+snapshots), spring-milestones (https://repo.spring.io/milestone, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [spring-snapshots (https://repo.spring.io/snapshot, default, releases+snapshots), spring-milestones (https://repo.spring.io/milestone, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] --- init fork of com.microsoft.springframework.samples:spring-todo-app:2.0-SNAPSHOT for org.springframework.boot:spring-boot-maven-plugin:2.1.0.RC1:run (default-cli) ---
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, test]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.1.0:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <parameters default-value="false">true</parameters>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.6">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.6">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.1.0:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <parameters default-value="false">true</parameters>
+  <project default-value="${project}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.6">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.6">${maven.compiler.target}</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] --- exit fork of com.microsoft.springframework.samples:spring-todo-app:2.0-SNAPSHOT for org.springframework.boot:spring-boot-maven-plugin:2.1.0.RC1:run (default-cli) ---
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.springframework.boot:spring-boot-maven-plugin:2.1.0.RC1:run (default-cli)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addResources default-value="false">${spring-boot.run.addResources}</addResources>
+  <agent>${spring-boot.run.agent}</agent>
+  <arguments>${spring-boot.run.arguments}</arguments>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <excludeGroupIds default-value="">${spring-boot.excludeGroupIds}</excludeGroupIds>
+  <excludes>${spring-boot.excludes}</excludes>
+  <folders>${spring-boot.run.folders}</folders>
+  <fork>${spring-boot.run.fork}</fork>
+  <includes>${spring-boot.includes}</includes>
+  <jvmArguments>${spring-boot.run.jvmArguments}</jvmArguments>
+  <mainClass>${start-class}</mainClass>
+  <noverify>${spring-boot.run.noverify}</noverify>
+  <profiles>${spring-boot.run.profiles}</profiles>
+  <project default-value="${project}"/>
+  <skip default-value="false">${spring-boot.run.skip}</skip>
+  <useTestClasspath default-value="false">${spring-boot.run.useTestClasspath}</useTestClasspath>
+  <workingDirectory>${spring-boot.run.workingDirectory}</workingDirectory>
+</configuration>
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.1.0.RC1:run (default-cli) > test-compile @ spring-todo-app >>>
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1478816, ConflictMarker.markTime=769841, ConflictMarker.nodeCount=238, ConflictIdSorter.graphTime=857705, ConflictIdSorter.topsortTime=483631, ConflictIdSorter.conflictIdCount=97, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=10085138, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=378252281, DefaultDependencyCollector.transformTime=15960702}
+[DEBUG] com.microsoft.springframework.samples:spring-todo-app:jar:2.0-SNAPSHOT
+[DEBUG]    org.springframework.boot:spring-boot-starter-web:jar:2.1.0.RC1:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter:jar:2.1.0.RC1:compile (version managed from 2.1.0.RC1)
+[DEBUG]          org.springframework.boot:spring-boot:jar:2.1.0.RC1:compile (version managed from 2.1.0.RC1)
+[DEBUG]          org.springframework.boot:spring-boot-autoconfigure:jar:2.1.0.RC1:compile (version managed from 2.1.0.RC1)
+[DEBUG]          org.springframework.boot:spring-boot-starter-logging:jar:2.1.0.RC1:compile (version managed from 2.1.0.RC1)
+[DEBUG]             ch.qos.logback:logback-classic:jar:1.2.3:compile (version managed from 1.2.3)
+[DEBUG]                ch.qos.logback:logback-core:jar:1.2.3:compile (version managed from 1.2.3)
+[DEBUG]             org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.1:compile (version managed from 2.11.1)
+[DEBUG]                org.apache.logging.log4j:log4j-api:jar:2.11.1:compile (version managed from 2.11.1)
+[DEBUG]             org.slf4j:jul-to-slf4j:jar:1.7.25:compile (version managed from 1.7.25)
+[DEBUG]          javax.annotation:javax.annotation-api:jar:1.3.2:compile (version managed from 1.3.2)
+[DEBUG]          org.yaml:snakeyaml:jar:1.23:runtime (version managed from 1.23)
+[DEBUG]       org.springframework.boot:spring-boot-starter-json:jar:2.1.0.RC1:compile (version managed from 2.1.0.RC1)
+[DEBUG]          com.fasterxml.jackson.core:jackson-databind:jar:2.9.7:compile (version managed from 2.9.7)
+[DEBUG]             com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile (version managed from 2.9.0)
+[DEBUG]             com.fasterxml.jackson.core:jackson-core:jar:2.9.7:compile (version managed from 2.9.7)
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.7:compile (version managed from 2.9.7)
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.7:compile (version managed from 2.9.7)
+[DEBUG]          com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.7:compile (version managed from 2.9.7)
+[DEBUG]       org.springframework.boot:spring-boot-starter-tomcat:jar:2.1.0.RC1:compile (version managed from 2.1.0.RC1)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.12:compile (version managed from 9.0.12)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.12:compile (version managed from 9.0.12)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.12:compile (version managed from 9.0.12)
+[DEBUG]       org.hibernate.validator:hibernate-validator:jar:6.0.13.Final:compile (version managed from 6.0.13.Final)
+[DEBUG]          javax.validation:validation-api:jar:2.0.1.Final:compile (version managed from 2.0.1.Final)
+[DEBUG]          org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile (version managed from 3.3.2.Final)
+[DEBUG]          com.fasterxml:classmate:jar:1.4.0:compile (version managed from 1.3.4)
+[DEBUG]       org.springframework:spring-web:jar:5.1.1.RELEASE:compile (version managed from 5.1.1.RELEASE)
+[DEBUG]          org.springframework:spring-beans:jar:5.1.1.RELEASE:compile (version managed from 5.1.1.RELEASE)
+[DEBUG]       org.springframework:spring-webmvc:jar:5.1.1.RELEASE:compile (version managed from 5.1.1.RELEASE)
+[DEBUG]          org.springframework:spring-aop:jar:5.1.1.RELEASE:compile (version managed from 5.1.1.RELEASE)
+[DEBUG]          org.springframework:spring-expression:jar:5.1.1.RELEASE:compile (version managed from 5.1.1.RELEASE)
+[DEBUG]    org.springframework.boot:spring-boot-starter-actuator:jar:2.1.0.RC1:compile
+[DEBUG]       org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.1.0.RC1:compile (version managed from 2.1.0.RC1)
+[DEBUG]          org.springframework.boot:spring-boot-actuator:jar:2.1.0.RC1:compile (version managed from 2.1.0.RC1)
+[DEBUG]       io.micrometer:micrometer-core:jar:1.1.0-rc.1:compile (version managed from 1.1.0-rc.1)
+[DEBUG]          org.hdrhistogram:HdrHistogram:jar:2.1.9:compile
+[DEBUG]          org.latencyutils:LatencyUtils:jar:2.0.3:compile
+[DEBUG]    com.microsoft.azure:azure-cosmosdb-spring-boot-starter:jar:2.0.7:compile
+[DEBUG]       com.microsoft.azure:azure-spring-boot-starter:jar:2.0.7:compile (version managed from 2.0.7)
+[DEBUG]          org.springframework.boot:spring-boot-starter-validation:jar:2.1.0.RC1:compile (version managed from 2.0.3.RELEASE)
+[DEBUG]          com.microsoft.azure:azure-spring-boot:jar:2.0.7:compile (version managed from 2.0.7)
+[DEBUG]       com.microsoft.azure:spring-data-cosmosdb:jar:2.0.5:compile (version managed from 2.0.5)
+[DEBUG]          com.microsoft.azure:azure-documentdb:jar:1.16.2:compile (version managed from 1.16.2)
+[DEBUG]             com.fasterxml.uuid:java-uuid-generator:jar:3.1.4:compile
+[DEBUG]             org.json:json:jar:20140107:compile
+[DEBUG]             org.apache.commons:commons-lang3:jar:3.8.1:compile (version managed from 3.5)
+[DEBUG]             org.apache.httpcomponents:httpclient:jar:4.5.6:compile (version managed from 4.5.2) (exclusions managed)
+[DEBUG]                commons-codec:commons-codec:jar:1.11:compile (version managed from 1.10)
+[DEBUG]             org.apache.httpcomponents:httpcore:jar:4.4.10:compile (version managed from 4.4.6)
+[DEBUG]             joda-time:joda-time:jar:2.10:compile (version managed from 2.9.9)
+[DEBUG]          com.microsoft.azure:applicationinsights-core:jar:2.0.1:compile (version managed from 2.0.1)
+[DEBUG]             eu.infomas:annotation-detector:jar:3.0.5:compile
+[DEBUG]             commons-io:commons-io:jar:2.6:compile
+[DEBUG]             com.google.guava:guava:jar:20.0:compile
+[DEBUG]             com.google.code.gson:gson:jar:2.8.5:compile (version managed from 2.8.2)
+[DEBUG]          org.projectlombok:lombok:jar:1.18.2:compile (version managed from 1.16.18)
+[DEBUG]          org.javatuples:javatuples:jar:1.2:compile
+[DEBUG]    com.github.derjust:spring-data-dynamodb:jar:5.0.3:compile
+[DEBUG]       org.springframework:spring-context:jar:5.1.1.RELEASE:compile (version managed from 5.0.4.RELEASE)
+[DEBUG]       org.springframework:spring-tx:jar:5.1.1.RELEASE:compile (version managed from 5.0.4.RELEASE)
+[DEBUG]       org.springframework.data:spring-data-commons:jar:2.1.1.RELEASE:compile (version managed from 2.0.9.RELEASE)
+[DEBUG]          org.slf4j:slf4j-api:jar:1.7.25:compile (version managed from 1.7.25)
+[DEBUG]       com.amazonaws:aws-java-sdk-dynamodb:jar:1.11.301:compile
+[DEBUG]          com.amazonaws:aws-java-sdk-s3:jar:1.11.301:compile
+[DEBUG]             com.amazonaws:aws-java-sdk-kms:jar:1.11.301:compile
+[DEBUG]          com.amazonaws:aws-java-sdk-core:jar:1.11.301:compile
+[DEBUG]             commons-logging:commons-logging:jar:1.1.3:compile
+[DEBUG]             software.amazon.ion:ion-java:jar:1.0.2:compile
+[DEBUG]             com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:jar:2.9.7:compile (version managed from 2.6.7)
+[DEBUG]          com.amazonaws:jmespath-java:jar:1.11.301:compile
+[DEBUG]       javax.enterprise:cdi-api:jar:1.2:compile
+[DEBUG]          javax.el:javax.el-api:jar:3.0.0:compile
+[DEBUG]          javax.interceptor:javax.interceptor-api:jar:1.2:compile
+[DEBUG]          javax.inject:javax.inject:jar:1:compile
+[DEBUG]    org.springframework.boot:spring-boot-starter-test:jar:2.1.0.RC1:test
+[DEBUG]       org.springframework.boot:spring-boot-test:jar:2.1.0.RC1:test (version managed from 2.1.0.RC1)
+[DEBUG]       org.springframework.boot:spring-boot-test-autoconfigure:jar:2.1.0.RC1:test (version managed from 2.1.0.RC1)
+[DEBUG]       com.jayway.jsonpath:json-path:jar:2.4.0:test (version managed from 2.4.0)
+[DEBUG]          net.minidev:json-smart:jar:2.3:test
+[DEBUG]             net.minidev:accessors-smart:jar:1.2:test
+[DEBUG]                org.ow2.asm:asm:jar:5.0.4:test
+[DEBUG]       junit:junit:jar:4.12:test (version managed from 4.12)
+[DEBUG]       org.assertj:assertj-core:jar:3.11.1:test (version managed from 3.11.1)
+[DEBUG]       org.mockito:mockito-core:jar:2.23.0:test (version managed from 2.23.0)
+[DEBUG]          net.bytebuddy:byte-buddy:jar:1.9.1:test (version managed from 1.9.0)
+[DEBUG]          net.bytebuddy:byte-buddy-agent:jar:1.9.1:test (version managed from 1.9.0)
+[DEBUG]          org.objenesis:objenesis:jar:2.6:test
+[DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test (version managed from 1.3)
+[DEBUG]       org.hamcrest:hamcrest-library:jar:1.3:test (version managed from 1.3)
+[DEBUG]       org.skyscreamer:jsonassert:jar:1.5.0:test (version managed from 1.5.0)
+[DEBUG]          com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[DEBUG]       org.springframework:spring-core:jar:5.1.1.RELEASE:compile (version managed from 5.1.1.RELEASE)
+[DEBUG]          org.springframework:spring-jcl:jar:5.1.1.RELEASE:compile (version managed from 5.1.1.RELEASE)
+[DEBUG]       org.springframework:spring-test:jar:5.1.1.RELEASE:test (version managed from 5.1.1.RELEASE)
+[DEBUG]       org.xmlunit:xmlunit-core:jar:2.6.2:test (version managed from 2.6.2)
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ spring-todo-app ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=145125, ConflictMarker.markTime=106363, ConflictMarker.nodeCount=68, ConflictIdSorter.graphTime=129483, ConflictIdSorter.topsortTime=29621, ConflictIdSorter.conflictIdCount=28, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=893332, ConflictResolver.conflictItemCount=67, DefaultDependencyCollector.collectTime=95302891, DefaultDependencyCollector.transformTime=1383193}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:3.1.0:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:3.1.1:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:3.0.0:compile
+[DEBUG]          com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]    commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.24:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.1.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.1.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.1.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.1.0
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.1.0
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.1.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.0.0
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.24
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:3.1.0:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.1.0, parent: java.net.URLClassLoader@452b3a41]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:3.1.0:resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/bruno/work/azure/demos/spring-todo-app/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.microsoft.springframework.samples:spring-todo-app:2.0-SNAPSHOT @ /Users/bruno/work/azure/demos/spring-todo-app/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: true, FileSet {directory: /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources, PatternSet [includes: {**/application*.yml, **/application*.yaml, **/application*.properties}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources, PatternSet [includes: {}, excludes: {**/application*.yml, **/application*.yaml, **/application*.properties}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@11ce2e22
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used {project.baseUri=file:/Users/bruno/work/azure/demos/spring-todo-app/, env.SDKMAN_PLATFORM=Darwin, statsd-client.version=3.1.0, saaj-impl.version=1.5.0, jaxen.version=1.1.6, xml-apis.version=1.4.01, spring.version=5.1.1.RELEASE, env.LC_CTYPE=en_US.UTF-8, env.TERM=xterm-256color, byte-buddy.version=1.9.1, janino.version=3.0.10, htmlunit.version=2.33, nio-multipart-parser.version=1.1.0, env.OLDPWD=/Users/bruno/work/azure/demos/spring-todo-app, maven-source-plugin.version=3.0.1, user.dir=/Users/bruno/work/azure/demos/spring-todo-app, java.vm.version=25.172-b11, env.Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.ZQljLaINSs/Render, selenium.version=3.14.0, versions-maven-plugin.version=2.7, jackson.version=2.9.7, thymeleaf-extras-java8time.version=3.0.1.RELEASE, sun.os.patch.level=unknown, snakeyaml.version=1.23, javax-validation.version=2.0.1.Final, jetty.version=9.4.12.v20180830, java.vm.specification.name=Java Virtual Machine Specification, httpclient.version=4.5.6, solr.version=7.4.0, tomcat.version=9.0.12, spring-kafka.version=2.2.0.RC1, jboss-transaction-spi.version=7.6.0.Final, influxdb-java.version=2.14, netty.version=4.1.29.Final, jdom2.version=2.0.6, os.name=Mac OS X, pooled-jms-version=1.0.3, rxjava2.version=2.2.2, maven.version=3.5.4, maven-install-plugin.version=2.5.2, env.XPC_FLAGS=0x0, log4j2.version=2.11.1, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=x86_64, user.name=brborges, servlet-api.version=4.0.1, activemq.version=5.15.6, aspectj.version=1.9.1, sun.java.command=org.apache.maven.wrapper.MavenWrapperMain -Dspring.profiles.active=dynamodb spring-boot:run -X, env.USER=brborges, env.SDKMAN_DIR=/Users/bruno/.sdkman, ehcache.version=2.10.5, env.LOGNAME=brborges, project.reporting.outputEncoding=UTF-8, undertow.version=2.0.13.Final, javax-jaxws.version=2.3.1, querydsl.version=4.2.1, mssql-jdbc.version=6.4.0.jre8, user.country=CA, slf4j.version=1.7.25, env.JENV_FORCEJDKHOME=true, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/endorsed, maven-dependency-plugin.version=3.1.1, kotlin.version=1.2.71, ehcache3.version=3.6.1, junit.version=4.12, java.vm.specification.version=1.8, env.SHLVL=1, kafka.version=2.0.0, spring-data-releasetrain.version=Lovelace-SR1, java.vendor=Oracle Corporation, spring-session-bom.version=Bean-RC1, hamcrest.version=1.3, spring-restdocs.version=2.0.2.RELEASE, file.separator=/, flyway.version=5.2.0, antlr2.version=2.7.7, env.JENV_LOADED=1, unboundid-ldapsdk.version=4.0.8, exec-maven-plugin.version=1.6.0, atomikos.version=4.0.6, glassfish-jaxb.version=2.3.1, jolokia.version=1.6.0, sun.java.launcher=SUN_STANDARD, env.SDKMAN_VERSION=5.7.3+337, env.PAGER=less, mockito.version=2.23.0, spring-ldap.version=2.3.2.RELEASE, maven-antrun-plugin.version=1.8, commons-pool2.version=2.6.0, java.library.path=/Users/bruno/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., glassfish-el.version=3.0.0, classworlds.conf=/Users/bruno/.m2/wrapper/dists/apache-maven-3.5.4-bin/jl1qqhdeineh9qg83dtj7i91c/apache-maven-3.5.4/bin/m2.conf, jmustache.version=1.14, quartz.version=2.3.0, project.build.sourceEncoding=UTF-8, sun.arch.data.model=64, micrometer.version=1.1.0-rc.1, junit-jupiter.version=5.3.1, env.PATH=/Users/bruno/.jenv/shims:/Users/bruno/.jenv/bin:/Users/bruno/.jenv/shims:/Users/bruno/.jenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Applications/Wireshark.app/Contents/MacOS:/Users/bruno/.jenv/shims:/Users/bruno/.jenv/bin:/Users/bruno/.sdkman/candidates/micronaut/current/bin:/Users/bruno/.sdkman/candidates/kotlin/current/bin:/Users/bruno/.sdkman/candidates/java/current/bin, path.separator=:, git-commit-id-plugin.version=2.2.5, env.TERM_PROGRAM=vscode, sun.io.unicode.encoding=UnicodeBig, env.SDKMAN_CANDIDATES_API=https://api.sdkman.io/2, maven-invoker-plugin.version=3.1.0, httpcore.version=4.4.10, xml-maven-plugin.version=1.0.2, user.language=en, jaybird.version=3.0.5, johnzon.version=1.1.10, env.GREP_COLOR=1;33, joda-time.version=2.10, appengine-sdk.version=1.9.66, env.FZF_DEFAULT_OPTS=--bind='ctrl-o:execute(code {})+abort', env.ZSH=/Users/bruno/.oh-my-zsh, gopherProxySet=false, maven.compiler.source=1.8, java.class.version=52.0, lettuce.version=5.1.1.RELEASE, couchbase-client.version=2.7.0, jboss-logging.version=3.3.2.Final, maven-javadoc-plugin.version=3.0.1, mariadb.version=2.3.0, jooq.version=3.11.5, file.encoding.pkg=sun.io, sun.cpu.endian=little, maven.compiler.target=1.8, cassandra-driver.version=3.6.0, spring.profiles.active=dynamodb, maven-site-plugin.version=3.7.1, env.SHELL=/bin/zsh, prometheus-pushgateway.version=0.5.0, groovy.version=2.5.3, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre, jetty-el.version=8.5.33, env.COSMOSDB_URI=https://cosmosdbspring.documents.azure.com:443, spring-batch.version=4.1.0.RC1, javax-activation.version=1.2.0, maven.home=/Users/bruno/.m2/wrapper/dists/apache-maven-3.5.4-bin/jl1qqhdeineh9qg83dtj7i91c/apache-maven-3.5.4, rxjava-adapter.version=1.2.1, commons-lang3.version=3.8.1, env.MICRONAUT_HOME=/Users/bruno/.sdkman/candidates/micronaut/current, maven-shade-plugin.version=3.2.0, maven-enforcer-plugin.version=3.0.0-M2, commons-pool.version=1.6, maven-war-plugin.version=3.2.2, httpasyncclient.version=4.1.4, javax-persistence.version=2.2, rxjava.version=1.3.8, env.COSMOSDB_KEY=3wBDki6kYApWvgVnsBnDaeXWyC21j66rK6VtilUadGyvUxA6LZhTkZeCGLzuRzIdpLb4BCFFpKaFccG8K2XVZw==, thymeleaf-extras-springsecurity.version=3.0.3.RELEASE, couchbase-cache-client.version=2.1.0, commons-dbcp2.version=2.5.0, maven-failsafe-plugin.version=2.22.0, xmlunit2.version=2.6.2, dom4j.version=1.6.1, env.SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.KPYgru47W0/Listeners, liquibase.version=3.6.2, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, wsdl4j.version=1.6.3, env.JENV_FORCEJAVAHOME=true, json-path.version=2.4.0, env.XPC_SERVICE_NAME=0, jsonassert.version=1.5.0, hazelcast.version=3.10.6, javax-transaction.version=1.3, h2.version=1.4.197, env.JDK_HOME=/Users/bruno/.jenv/versions/1.8, spring-retry.version=1.2.2.RELEASE, maven-clean-plugin.version=3.1.0, spring-plugin.version=1.2.0.RELEASE, maven.build.timestamp.format=yyMMddHHmmssSSS, java.vm.specification.vendor=Oracle Corporation, dropwizard-metrics.version=4.0.3, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.io.tmpdir=/var/folders/48/mkl5z_l107q43zrf0zxjyjbr0000gn/T/, java.vendor.url=http://java.oracle.com/, lombok.version=1.18.2, javax-jsonb.version=1.0, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib, jetty-reactive-httpclient.version=1.0.1, derby.version=10.14.2.0, gson.version=2.8.5, javax-jms.version=2.0.1, spring-security.version=5.1.1.RELEASE, java.runtime.name=Java(TM) SE Runtime Environment, javax-websocket.version=1.1, maven-resources-plugin.version=3.1.0, maven.conf=/Users/bruno/.m2/wrapper/dists/apache-maven-3.5.4-bin/jl1qqhdeineh9qg83dtj7i91c/apache-maven-3.5.4/conf, assertj.version=3.11.1, sun.cpu.isalist=, spring-amqp.version=2.1.0.RELEASE, hibernate-validator.version=6.0.13.Final, maven.multiModuleProjectDirectory=/Users/bruno, commons-codec.version=1.11, user.home=/Users/bruno, env.JAVA_HOME=/Users/bruno/.jenv/versions/1.8, johnzon-jsonb.version=1.1.10, env.LSCOLORS=exfxcxdxbxegedabagacad, mongodb.version=3.8.2, java.specification.name=Java Platform API Specification, logback.version=1.2.3, java.specification.vendor=Oracle Corporation, maven-help-plugin.version=3.1.0, rabbit-amqp-client.version=5.4.3, java.version=1.8.0_172, thymeleaf.version=3.0.10.RELEASE, embedded-mongo.version=2.1.1, postgresql.version=42.2.5, hsqldb.version=2.4.1, env.LESS=-R, hazelcast-hibernate5.version=1.2.3, javax-mail.version=1.6.2, webjars-hal-browser.version=3325375, flatten-maven-plugin.version=1.0.1, env.MAVEN_PROJECTBASEDIR=/Users/bruno, env.JAVA_MAIN_CLASS_33010=org.apache.maven.wrapper.MavenWrapperMain, maven.build.timestamp=2018-10-30T05:40:10Z, jersey.version=2.27, jna.version=4.5.2, env.PWD=/Users/bruno/work/azure/demos/spring-todo-app, env.TMPDIR=/var/folders/48/mkl5z_l107q43zrf0zxjyjbr0000gn/T/, line.separator=
+, java.specification.version=1.8, java.vm.info=mixed mode, env.TERM_PROGRAM_VERSION=1.28.2, spring-cloud-connectors.version=2.0.3.RELEASE, javax-annotation.version=1.3.2, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/classes, build-helper-maven-plugin.version=3.0.0, javax-json.version=1.1.3, bitronix.version=2.1.4, maven-deploy-plugin.version=2.8.2, jetty-jsp.version=2.2.0.v201112011158, env.HOME=/Users/bruno, mongo-driver-reactivestreams.version=1.9.2, infinispan.version=9.4.0.Final, nekohtml.version=1.9.22, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, jstl.version=1.2, sun.jnu.encoding=UTF-8, hibernate.version=5.3.7.Final, javax-money.version=1.0.3, java.runtime.version=1.8.0_172-b11, env.SDKMAN_CANDIDATES_DIR=/Users/bruno/.sdkman/candidates, sendgrid.version=4.3.0, reactive-streams.version=1.0.2, maven.build.version=Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T11:33:14-07:00), user.timezone=, resource.delimiter=@, reactor-bom.version=Californium-SR1, netty-tcnative.version=2.0.17.Final, mysql.version=8.0.12, hikaricp.version=3.2.0, spring-hateoas.version=0.25.0.RELEASE, java.ext.dirs=/Users/bruno/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, caffeine.version=2.6.2, javax-jaxb.version=2.3.1, spring-integration.version=5.1.0.RC2, jest.version=6.3.1, java.class.path=/Users/bruno/.mvn/wrapper/maven-wrapper.jar, maven-jar-plugin.version=3.1.0, os.version=10.14, neo4j-ogm.version=3.1.4, rest-assured.version=3.1.1, thymeleaf-layout-dialect.version=2.3.0, env.LS_COLORS=di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:, sqlite-jdbc.version=3.25.2, classmate.version=1.4.0, javax-cache.version=1.1.0, env.LANG=en_US.UTF-8, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, jedis.version=2.9.0, maven-compiler-plugin.version=3.8.0, java.vm.vendor=Oracle Corporation, maven-assembly-plugin.version=3.1.0, env.KOTLIN_HOME=/Users/bruno/.sdkman/candidates/kotlin/current, spring-framework.version=5.1.1.RELEASE, elasticsearch.version=6.4.2, freemarker.version=2.3.28, env.JENV_ROOT=/Users/bruno/.jenv, thymeleaf-extras-data-attribute.version=2.0.1, selenium-htmlunit.version=2.33.0, sun-mail.version=1.6.2, webjars-locator-core.version=0.35, artemis.version=2.6.3, maven-surefire-plugin.version=2.22.1, jtds.version=1.3.1, spring-ws.version=3.0.4.RELEASE, file.encoding=UTF-8, env.__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52, awt.toolkit=sun.lwawt.macosx.LWCToolkit}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources
+excludes []
+includes [**/application*.yml, **/application*.yaml, **/application*.properties]
+[DEBUG] ignoreDelta true
+[INFO] Copying 3 resources
+[DEBUG] Copying file application-cosmosdb.properties
+[DEBUG] file application-cosmosdb.properties has a filtered file extension
+[DEBUG] filtering /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources/application-cosmosdb.properties to /Users/bruno/work/azure/demos/spring-todo-app/target/classes/application-cosmosdb.properties
+[DEBUG] Copying file application-dynamodb.properties
+[DEBUG] file application-dynamodb.properties has a filtered file extension
+[DEBUG] filtering /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources/application-dynamodb.properties to /Users/bruno/work/azure/demos/spring-todo-app/target/classes/application-dynamodb.properties
+[DEBUG] Copying file application.properties
+[DEBUG] file application.properties has a filtered file extension
+[DEBUG] filtering /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources/application.properties to /Users/bruno/work/azure/demos/spring-todo-app/target/classes/application.properties
+[DEBUG] resource with targetPath null
+directory /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources
+excludes [**/application*.yml, **/application*.yaml, **/application*.properties]
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 7 resources
+[DEBUG] Copying file static/index.html
+[DEBUG] file index.html has a filtered file extension
+[DEBUG] copy /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources/static/index.html to /Users/bruno/work/azure/demos/spring-todo-app/target/classes/static/index.html
+[DEBUG] Copying file static/Scripts/todoListSvc.js
+[DEBUG] file todoListSvc.js has a filtered file extension
+[DEBUG] copy /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources/static/Scripts/todoListSvc.js to /Users/bruno/work/azure/demos/spring-todo-app/target/classes/static/Scripts/todoListSvc.js
+[DEBUG] Copying file static/Scripts/todoListCtrl.js
+[DEBUG] file todoListCtrl.js has a filtered file extension
+[DEBUG] copy /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources/static/Scripts/todoListCtrl.js to /Users/bruno/work/azure/demos/spring-todo-app/target/classes/static/Scripts/todoListCtrl.js
+[DEBUG] Copying file static/Scripts/homeCtrl.js
+[DEBUG] file homeCtrl.js has a filtered file extension
+[DEBUG] copy /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources/static/Scripts/homeCtrl.js to /Users/bruno/work/azure/demos/spring-todo-app/target/classes/static/Scripts/homeCtrl.js
+[DEBUG] Copying file static/Scripts/app.js
+[DEBUG] file app.js has a filtered file extension
+[DEBUG] copy /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources/static/Scripts/app.js to /Users/bruno/work/azure/demos/spring-todo-app/target/classes/static/Scripts/app.js
+[DEBUG] Copying file static/Views/Home.html
+[DEBUG] file Home.html has a filtered file extension
+[DEBUG] copy /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources/static/Views/Home.html to /Users/bruno/work/azure/demos/spring-todo-app/target/classes/static/Views/Home.html
+[DEBUG] Copying file static/Views/TodoList.html
+[DEBUG] file TodoList.html has a filtered file extension
+[DEBUG] copy /Users/bruno/work/azure/demos/spring-todo-app/src/main/resources/static/Views/TodoList.html to /Users/bruno/work/azure/demos/spring-todo-app/target/classes/static/Views/TodoList.html
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ spring-todo-app ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=252501, ConflictMarker.markTime=105636, ConflictMarker.nodeCount=118, ConflictIdSorter.graphTime=64543, ConflictIdSorter.topsortTime=49987, ConflictIdSorter.conflictIdCount=45, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1316580, ConflictResolver.conflictItemCount=72, DefaultDependencyCollector.collectTime=54161951, DefaultDependencyCollector.transformTime=1808356}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.8.0:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[DEBUG]       commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-java:jar:0.9.10:compile
+[DEBUG]       org.ow2.asm:asm:jar:6.2:compile
+[DEBUG]       com.thoughtworks.qdox:qdox:jar:2.0-M9:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.8.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.8.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.8.4:runtime
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.8.0
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.4
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:0.9.10
+[DEBUG]   Included: org.ow2.asm:asm:jar:6.2
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0-M9
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.8.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.8.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.8.4
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0, parent: java.net.URLClassLoader@452b3a41]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /Users/bruno/work/azure/demos/spring-todo-app
+[DEBUG]   (f) buildDirectory = /Users/bruno/work/azure/demos/spring-todo-app/target
+[DEBUG]   (f) compilePath = [/Users/bruno/work/azure/demos/spring-todo-app/target/classes, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.1.0.RC1/spring-boot-starter-web-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RC1/spring-boot-starter-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot/2.1.0.RC1/spring-boot-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.0.RC1/spring-boot-autoconfigure-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.0.RC1/spring-boot-starter-logging-2.1.0.RC1.jar, /Users/bruno/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, /Users/bruno/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, /Users/bruno/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar, /Users/bruno/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar, /Users/bruno/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar, /Users/bruno/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.0.RC1/spring-boot-starter-json-2.1.0.RC1.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.0.RC1/spring-boot-starter-tomcat-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar, /Users/bruno/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.12/tomcat-embed-el-9.0.12.jar, /Users/bruno/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.12/tomcat-embed-websocket-9.0.12.jar, /Users/bruno/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar, /Users/bruno/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar, /Users/bruno/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar, /Users/bruno/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar, /Users/bruno/.m2/repository/org/springframework/spring-web/5.1.1.RELEASE/spring-web-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-beans/5.1.1.RELEASE/spring-beans-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-webmvc/5.1.1.RELEASE/spring-webmvc-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-aop/5.1.1.RELEASE/spring-aop-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-expression/5.1.1.RELEASE/spring-expression-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/2.1.0.RC1/spring-boot-starter-actuator-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.1.0.RC1/spring-boot-actuator-autoconfigure-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-actuator/2.1.0.RC1/spring-boot-actuator-2.1.0.RC1.jar, /Users/bruno/.m2/repository/io/micrometer/micrometer-core/1.1.0-rc.1/micrometer-core-1.1.0-rc.1.jar, /Users/bruno/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.jar, /Users/bruno/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-cosmosdb-spring-boot-starter/2.0.7/azure-cosmosdb-spring-boot-starter-2.0.7.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-spring-boot-starter/2.0.7/azure-spring-boot-starter-2.0.7.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.1.0.RC1/spring-boot-starter-validation-2.1.0.RC1.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-spring-boot/2.0.7/azure-spring-boot-2.0.7.jar, /Users/bruno/.m2/repository/com/microsoft/azure/spring-data-cosmosdb/2.0.5/spring-data-cosmosdb-2.0.5.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-documentdb/1.16.2/azure-documentdb-1.16.2.jar, /Users/bruno/.m2/repository/com/fasterxml/uuid/java-uuid-generator/3.1.4/java-uuid-generator-3.1.4.jar, /Users/bruno/.m2/repository/org/json/json/20140107/json-20140107.jar, /Users/bruno/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar, /Users/bruno/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar, /Users/bruno/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar, /Users/bruno/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar, /Users/bruno/.m2/repository/joda-time/joda-time/2.10/joda-time-2.10.jar, /Users/bruno/.m2/repository/com/microsoft/azure/applicationinsights-core/2.0.1/applicationinsights-core-2.0.1.jar, /Users/bruno/.m2/repository/eu/infomas/annotation-detector/3.0.5/annotation-detector-3.0.5.jar, /Users/bruno/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar, /Users/bruno/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar, /Users/bruno/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar, /Users/bruno/.m2/repository/org/projectlombok/lombok/1.18.2/lombok-1.18.2.jar, /Users/bruno/.m2/repository/org/javatuples/javatuples/1.2/javatuples-1.2.jar, /Users/bruno/.m2/repository/com/github/derjust/spring-data-dynamodb/5.0.3/spring-data-dynamodb-5.0.3.jar, /Users/bruno/.m2/repository/org/springframework/spring-context/5.1.1.RELEASE/spring-context-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-tx/5.1.1.RELEASE/spring-tx-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/data/spring-data-commons/2.1.1.RELEASE/spring-data-commons-2.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-dynamodb/1.11.301/aws-java-sdk-dynamodb-1.11.301.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-s3/1.11.301/aws-java-sdk-s3-1.11.301.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-kms/1.11.301/aws-java-sdk-kms-1.11.301.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-core/1.11.301/aws-java-sdk-core-1.11.301.jar, /Users/bruno/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar, /Users/bruno/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.9.7/jackson-dataformat-cbor-2.9.7.jar, /Users/bruno/.m2/repository/com/amazonaws/jmespath-java/1.11.301/jmespath-java-1.11.301.jar, /Users/bruno/.m2/repository/javax/enterprise/cdi-api/1.2/cdi-api-1.2.jar, /Users/bruno/.m2/repository/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.jar, /Users/bruno/.m2/repository/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar, /Users/bruno/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar, /Users/bruno/.m2/repository/org/springframework/spring-core/5.1.1.RELEASE/spring-core-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-jcl/5.1.1.RELEASE/spring-jcl-5.1.1.RELEASE.jar]
+[DEBUG]   (f) compileSourceRoots = [/Users/bruno/work/azure/demos/spring-todo-app/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /Users/bruno/work/azure/demos/spring-todo-app/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /Users/bruno/work/azure/demos/spring-todo-app/target/classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: com.microsoft.springframework.samples:spring-todo-app:2.0-SNAPSHOT @ /Users/bruno/work/azure/demos/spring-todo-app/pom.xml
+[DEBUG]   (f) projectArtifact = com.microsoft.springframework.samples:spring-todo-app:jar:2.0-SNAPSHOT
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@11ce2e22
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /Users/bruno/work/azure/demos/spring-todo-app/target/generated-sources/annotations to compile source roots:
+  /Users/bruno/work/azure/demos/spring-todo-app/src/main/java
+[DEBUG] New compile source roots:
+  /Users/bruno/work/azure/demos/spring-todo-app/src/main/java
+  /Users/bruno/work/azure/demos/spring-todo-app/target/generated-sources/annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ spring-todo-app ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:3.1.0:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.1.0, parent: java.net.URLClassLoader@452b3a41]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:3.1.0:testResources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/bruno/work/azure/demos/spring-todo-app/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.microsoft.springframework.samples:spring-todo-app:2.0-SNAPSHOT @ /Users/bruno/work/azure/demos/spring-todo-app/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /Users/bruno/work/azure/demos/spring-todo-app/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@11ce2e22
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used {project.baseUri=file:/Users/bruno/work/azure/demos/spring-todo-app/, env.SDKMAN_PLATFORM=Darwin, statsd-client.version=3.1.0, saaj-impl.version=1.5.0, jaxen.version=1.1.6, xml-apis.version=1.4.01, spring.version=5.1.1.RELEASE, env.LC_CTYPE=en_US.UTF-8, env.TERM=xterm-256color, byte-buddy.version=1.9.1, janino.version=3.0.10, htmlunit.version=2.33, nio-multipart-parser.version=1.1.0, env.OLDPWD=/Users/bruno/work/azure/demos/spring-todo-app, maven-source-plugin.version=3.0.1, user.dir=/Users/bruno/work/azure/demos/spring-todo-app, java.vm.version=25.172-b11, env.Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.ZQljLaINSs/Render, selenium.version=3.14.0, versions-maven-plugin.version=2.7, jackson.version=2.9.7, thymeleaf-extras-java8time.version=3.0.1.RELEASE, sun.os.patch.level=unknown, snakeyaml.version=1.23, javax-validation.version=2.0.1.Final, jetty.version=9.4.12.v20180830, java.vm.specification.name=Java Virtual Machine Specification, httpclient.version=4.5.6, solr.version=7.4.0, tomcat.version=9.0.12, spring-kafka.version=2.2.0.RC1, jboss-transaction-spi.version=7.6.0.Final, influxdb-java.version=2.14, netty.version=4.1.29.Final, jdom2.version=2.0.6, os.name=Mac OS X, pooled-jms-version=1.0.3, rxjava2.version=2.2.2, maven.version=3.5.4, maven-install-plugin.version=2.5.2, env.XPC_FLAGS=0x0, log4j2.version=2.11.1, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=x86_64, user.name=brborges, servlet-api.version=4.0.1, activemq.version=5.15.6, aspectj.version=1.9.1, sun.java.command=org.apache.maven.wrapper.MavenWrapperMain -Dspring.profiles.active=dynamodb spring-boot:run -X, env.USER=brborges, env.SDKMAN_DIR=/Users/bruno/.sdkman, ehcache.version=2.10.5, env.LOGNAME=brborges, project.reporting.outputEncoding=UTF-8, undertow.version=2.0.13.Final, javax-jaxws.version=2.3.1, querydsl.version=4.2.1, mssql-jdbc.version=6.4.0.jre8, user.country=CA, slf4j.version=1.7.25, env.JENV_FORCEJDKHOME=true, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/endorsed, maven-dependency-plugin.version=3.1.1, kotlin.version=1.2.71, ehcache3.version=3.6.1, junit.version=4.12, java.vm.specification.version=1.8, env.SHLVL=1, kafka.version=2.0.0, spring-data-releasetrain.version=Lovelace-SR1, java.vendor=Oracle Corporation, spring-session-bom.version=Bean-RC1, hamcrest.version=1.3, spring-restdocs.version=2.0.2.RELEASE, file.separator=/, flyway.version=5.2.0, antlr2.version=2.7.7, env.JENV_LOADED=1, unboundid-ldapsdk.version=4.0.8, exec-maven-plugin.version=1.6.0, atomikos.version=4.0.6, glassfish-jaxb.version=2.3.1, jolokia.version=1.6.0, sun.java.launcher=SUN_STANDARD, env.SDKMAN_VERSION=5.7.3+337, env.PAGER=less, mockito.version=2.23.0, spring-ldap.version=2.3.2.RELEASE, maven-antrun-plugin.version=1.8, commons-pool2.version=2.6.0, java.library.path=/Users/bruno/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., glassfish-el.version=3.0.0, classworlds.conf=/Users/bruno/.m2/wrapper/dists/apache-maven-3.5.4-bin/jl1qqhdeineh9qg83dtj7i91c/apache-maven-3.5.4/bin/m2.conf, jmustache.version=1.14, quartz.version=2.3.0, project.build.sourceEncoding=UTF-8, sun.arch.data.model=64, micrometer.version=1.1.0-rc.1, junit-jupiter.version=5.3.1, env.PATH=/Users/bruno/.jenv/shims:/Users/bruno/.jenv/bin:/Users/bruno/.jenv/shims:/Users/bruno/.jenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Applications/Wireshark.app/Contents/MacOS:/Users/bruno/.jenv/shims:/Users/bruno/.jenv/bin:/Users/bruno/.sdkman/candidates/micronaut/current/bin:/Users/bruno/.sdkman/candidates/kotlin/current/bin:/Users/bruno/.sdkman/candidates/java/current/bin, path.separator=:, git-commit-id-plugin.version=2.2.5, env.TERM_PROGRAM=vscode, sun.io.unicode.encoding=UnicodeBig, env.SDKMAN_CANDIDATES_API=https://api.sdkman.io/2, maven-invoker-plugin.version=3.1.0, httpcore.version=4.4.10, xml-maven-plugin.version=1.0.2, user.language=en, jaybird.version=3.0.5, johnzon.version=1.1.10, env.GREP_COLOR=1;33, joda-time.version=2.10, appengine-sdk.version=1.9.66, env.FZF_DEFAULT_OPTS=--bind='ctrl-o:execute(code {})+abort', env.ZSH=/Users/bruno/.oh-my-zsh, gopherProxySet=false, maven.compiler.source=1.8, java.class.version=52.0, lettuce.version=5.1.1.RELEASE, couchbase-client.version=2.7.0, jboss-logging.version=3.3.2.Final, maven-javadoc-plugin.version=3.0.1, mariadb.version=2.3.0, jooq.version=3.11.5, file.encoding.pkg=sun.io, sun.cpu.endian=little, maven.compiler.target=1.8, cassandra-driver.version=3.6.0, spring.profiles.active=dynamodb, maven-site-plugin.version=3.7.1, env.SHELL=/bin/zsh, prometheus-pushgateway.version=0.5.0, groovy.version=2.5.3, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre, jetty-el.version=8.5.33, env.COSMOSDB_URI=https://cosmosdbspring.documents.azure.com:443, spring-batch.version=4.1.0.RC1, javax-activation.version=1.2.0, maven.home=/Users/bruno/.m2/wrapper/dists/apache-maven-3.5.4-bin/jl1qqhdeineh9qg83dtj7i91c/apache-maven-3.5.4, rxjava-adapter.version=1.2.1, commons-lang3.version=3.8.1, env.MICRONAUT_HOME=/Users/bruno/.sdkman/candidates/micronaut/current, maven-shade-plugin.version=3.2.0, maven-enforcer-plugin.version=3.0.0-M2, commons-pool.version=1.6, maven-war-plugin.version=3.2.2, httpasyncclient.version=4.1.4, javax-persistence.version=2.2, rxjava.version=1.3.8, env.COSMOSDB_KEY=3wBDki6kYApWvgVnsBnDaeXWyC21j66rK6VtilUadGyvUxA6LZhTkZeCGLzuRzIdpLb4BCFFpKaFccG8K2XVZw==, thymeleaf-extras-springsecurity.version=3.0.3.RELEASE, couchbase-cache-client.version=2.1.0, commons-dbcp2.version=2.5.0, maven-failsafe-plugin.version=2.22.0, xmlunit2.version=2.6.2, dom4j.version=1.6.1, env.SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.KPYgru47W0/Listeners, liquibase.version=3.6.2, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, wsdl4j.version=1.6.3, env.JENV_FORCEJAVAHOME=true, json-path.version=2.4.0, env.XPC_SERVICE_NAME=0, jsonassert.version=1.5.0, hazelcast.version=3.10.6, javax-transaction.version=1.3, h2.version=1.4.197, env.JDK_HOME=/Users/bruno/.jenv/versions/1.8, spring-retry.version=1.2.2.RELEASE, maven-clean-plugin.version=3.1.0, spring-plugin.version=1.2.0.RELEASE, maven.build.timestamp.format=yyMMddHHmmssSSS, java.vm.specification.vendor=Oracle Corporation, dropwizard-metrics.version=4.0.3, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.io.tmpdir=/var/folders/48/mkl5z_l107q43zrf0zxjyjbr0000gn/T/, java.vendor.url=http://java.oracle.com/, lombok.version=1.18.2, javax-jsonb.version=1.0, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib, jetty-reactive-httpclient.version=1.0.1, derby.version=10.14.2.0, gson.version=2.8.5, javax-jms.version=2.0.1, spring-security.version=5.1.1.RELEASE, java.runtime.name=Java(TM) SE Runtime Environment, javax-websocket.version=1.1, maven-resources-plugin.version=3.1.0, maven.conf=/Users/bruno/.m2/wrapper/dists/apache-maven-3.5.4-bin/jl1qqhdeineh9qg83dtj7i91c/apache-maven-3.5.4/conf, assertj.version=3.11.1, sun.cpu.isalist=, spring-amqp.version=2.1.0.RELEASE, hibernate-validator.version=6.0.13.Final, maven.multiModuleProjectDirectory=/Users/bruno, commons-codec.version=1.11, user.home=/Users/bruno, env.JAVA_HOME=/Users/bruno/.jenv/versions/1.8, johnzon-jsonb.version=1.1.10, env.LSCOLORS=exfxcxdxbxegedabagacad, mongodb.version=3.8.2, java.specification.name=Java Platform API Specification, logback.version=1.2.3, java.specification.vendor=Oracle Corporation, maven-help-plugin.version=3.1.0, rabbit-amqp-client.version=5.4.3, java.version=1.8.0_172, thymeleaf.version=3.0.10.RELEASE, embedded-mongo.version=2.1.1, postgresql.version=42.2.5, hsqldb.version=2.4.1, env.LESS=-R, hazelcast-hibernate5.version=1.2.3, javax-mail.version=1.6.2, webjars-hal-browser.version=3325375, flatten-maven-plugin.version=1.0.1, env.MAVEN_PROJECTBASEDIR=/Users/bruno, env.JAVA_MAIN_CLASS_33010=org.apache.maven.wrapper.MavenWrapperMain, maven.build.timestamp=2018-10-30T05:40:10Z, jersey.version=2.27, jna.version=4.5.2, env.PWD=/Users/bruno/work/azure/demos/spring-todo-app, env.TMPDIR=/var/folders/48/mkl5z_l107q43zrf0zxjyjbr0000gn/T/, line.separator=
+, java.specification.version=1.8, java.vm.info=mixed mode, env.TERM_PROGRAM_VERSION=1.28.2, spring-cloud-connectors.version=2.0.3.RELEASE, javax-annotation.version=1.3.2, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/classes, build-helper-maven-plugin.version=3.0.0, javax-json.version=1.1.3, bitronix.version=2.1.4, maven-deploy-plugin.version=2.8.2, jetty-jsp.version=2.2.0.v201112011158, env.HOME=/Users/bruno, mongo-driver-reactivestreams.version=1.9.2, infinispan.version=9.4.0.Final, nekohtml.version=1.9.22, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, jstl.version=1.2, sun.jnu.encoding=UTF-8, hibernate.version=5.3.7.Final, javax-money.version=1.0.3, java.runtime.version=1.8.0_172-b11, env.SDKMAN_CANDIDATES_DIR=/Users/bruno/.sdkman/candidates, sendgrid.version=4.3.0, reactive-streams.version=1.0.2, maven.build.version=Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T11:33:14-07:00), user.timezone=, resource.delimiter=@, reactor-bom.version=Californium-SR1, netty-tcnative.version=2.0.17.Final, mysql.version=8.0.12, hikaricp.version=3.2.0, spring-hateoas.version=0.25.0.RELEASE, java.ext.dirs=/Users/bruno/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, caffeine.version=2.6.2, javax-jaxb.version=2.3.1, spring-integration.version=5.1.0.RC2, jest.version=6.3.1, java.class.path=/Users/bruno/.mvn/wrapper/maven-wrapper.jar, maven-jar-plugin.version=3.1.0, os.version=10.14, neo4j-ogm.version=3.1.4, rest-assured.version=3.1.1, thymeleaf-layout-dialect.version=2.3.0, env.LS_COLORS=di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:, sqlite-jdbc.version=3.25.2, classmate.version=1.4.0, javax-cache.version=1.1.0, env.LANG=en_US.UTF-8, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, jedis.version=2.9.0, maven-compiler-plugin.version=3.8.0, java.vm.vendor=Oracle Corporation, maven-assembly-plugin.version=3.1.0, env.KOTLIN_HOME=/Users/bruno/.sdkman/candidates/kotlin/current, spring-framework.version=5.1.1.RELEASE, elasticsearch.version=6.4.2, freemarker.version=2.3.28, env.JENV_ROOT=/Users/bruno/.jenv, thymeleaf-extras-data-attribute.version=2.0.1, selenium-htmlunit.version=2.33.0, sun-mail.version=1.6.2, webjars-locator-core.version=0.35, artemis.version=2.6.3, maven-surefire-plugin.version=2.22.1, jtds.version=1.3.1, spring-ws.version=3.0.4.RELEASE, file.encoding=UTF-8, env.__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52, awt.toolkit=sun.lwawt.macosx.LWCToolkit}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory /Users/bruno/work/azure/demos/spring-todo-app/src/test/resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] Copying file test.properties
+[DEBUG] file test.properties has a filtered file extension
+[DEBUG] copy /Users/bruno/work/azure/demos/spring-todo-app/src/test/resources/test.properties to /Users/bruno/work/azure/demos/spring-todo-app/target/test-classes/test.properties
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ spring-todo-app ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0, parent: java.net.URLClassLoader@452b3a41]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = /Users/bruno/work/azure/demos/spring-todo-app
+[DEBUG]   (f) buildDirectory = /Users/bruno/work/azure/demos/spring-todo-app/target
+[DEBUG]   (f) compilePath = [/Users/bruno/work/azure/demos/spring-todo-app/target/classes, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.1.0.RC1/spring-boot-starter-web-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RC1/spring-boot-starter-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot/2.1.0.RC1/spring-boot-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.0.RC1/spring-boot-autoconfigure-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.0.RC1/spring-boot-starter-logging-2.1.0.RC1.jar, /Users/bruno/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, /Users/bruno/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, /Users/bruno/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar, /Users/bruno/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar, /Users/bruno/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar, /Users/bruno/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.0.RC1/spring-boot-starter-json-2.1.0.RC1.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.0.RC1/spring-boot-starter-tomcat-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar, /Users/bruno/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.12/tomcat-embed-el-9.0.12.jar, /Users/bruno/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.12/tomcat-embed-websocket-9.0.12.jar, /Users/bruno/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar, /Users/bruno/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar, /Users/bruno/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar, /Users/bruno/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar, /Users/bruno/.m2/repository/org/springframework/spring-web/5.1.1.RELEASE/spring-web-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-beans/5.1.1.RELEASE/spring-beans-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-webmvc/5.1.1.RELEASE/spring-webmvc-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-aop/5.1.1.RELEASE/spring-aop-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-expression/5.1.1.RELEASE/spring-expression-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/2.1.0.RC1/spring-boot-starter-actuator-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.1.0.RC1/spring-boot-actuator-autoconfigure-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-actuator/2.1.0.RC1/spring-boot-actuator-2.1.0.RC1.jar, /Users/bruno/.m2/repository/io/micrometer/micrometer-core/1.1.0-rc.1/micrometer-core-1.1.0-rc.1.jar, /Users/bruno/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.jar, /Users/bruno/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-cosmosdb-spring-boot-starter/2.0.7/azure-cosmosdb-spring-boot-starter-2.0.7.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-spring-boot-starter/2.0.7/azure-spring-boot-starter-2.0.7.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.1.0.RC1/spring-boot-starter-validation-2.1.0.RC1.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-spring-boot/2.0.7/azure-spring-boot-2.0.7.jar, /Users/bruno/.m2/repository/com/microsoft/azure/spring-data-cosmosdb/2.0.5/spring-data-cosmosdb-2.0.5.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-documentdb/1.16.2/azure-documentdb-1.16.2.jar, /Users/bruno/.m2/repository/com/fasterxml/uuid/java-uuid-generator/3.1.4/java-uuid-generator-3.1.4.jar, /Users/bruno/.m2/repository/org/json/json/20140107/json-20140107.jar, /Users/bruno/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar, /Users/bruno/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar, /Users/bruno/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar, /Users/bruno/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar, /Users/bruno/.m2/repository/joda-time/joda-time/2.10/joda-time-2.10.jar, /Users/bruno/.m2/repository/com/microsoft/azure/applicationinsights-core/2.0.1/applicationinsights-core-2.0.1.jar, /Users/bruno/.m2/repository/eu/infomas/annotation-detector/3.0.5/annotation-detector-3.0.5.jar, /Users/bruno/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar, /Users/bruno/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar, /Users/bruno/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar, /Users/bruno/.m2/repository/org/projectlombok/lombok/1.18.2/lombok-1.18.2.jar, /Users/bruno/.m2/repository/org/javatuples/javatuples/1.2/javatuples-1.2.jar, /Users/bruno/.m2/repository/com/github/derjust/spring-data-dynamodb/5.0.3/spring-data-dynamodb-5.0.3.jar, /Users/bruno/.m2/repository/org/springframework/spring-context/5.1.1.RELEASE/spring-context-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-tx/5.1.1.RELEASE/spring-tx-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/data/spring-data-commons/2.1.1.RELEASE/spring-data-commons-2.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-dynamodb/1.11.301/aws-java-sdk-dynamodb-1.11.301.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-s3/1.11.301/aws-java-sdk-s3-1.11.301.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-kms/1.11.301/aws-java-sdk-kms-1.11.301.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-core/1.11.301/aws-java-sdk-core-1.11.301.jar, /Users/bruno/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar, /Users/bruno/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.9.7/jackson-dataformat-cbor-2.9.7.jar, /Users/bruno/.m2/repository/com/amazonaws/jmespath-java/1.11.301/jmespath-java-1.11.301.jar, /Users/bruno/.m2/repository/javax/enterprise/cdi-api/1.2/cdi-api-1.2.jar, /Users/bruno/.m2/repository/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.jar, /Users/bruno/.m2/repository/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar, /Users/bruno/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar, /Users/bruno/.m2/repository/org/springframework/spring-core/5.1.1.RELEASE/spring-core-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-jcl/5.1.1.RELEASE/spring-jcl-5.1.1.RELEASE.jar]
+[DEBUG]   (f) compileSourceRoots = [/Users/bruno/work/azure/demos/spring-todo-app/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /Users/bruno/work/azure/demos/spring-todo-app/target/generated-test-sources/test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /Users/bruno/work/azure/demos/spring-todo-app/target/test-classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: com.microsoft.springframework.samples:spring-todo-app:2.0-SNAPSHOT @ /Users/bruno/work/azure/demos/spring-todo-app/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@11ce2e22
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 1.8
+[DEBUG]   (f) testPath = [/Users/bruno/work/azure/demos/spring-todo-app/target/test-classes, /Users/bruno/work/azure/demos/spring-todo-app/target/classes, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.1.0.RC1/spring-boot-starter-web-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.0.RC1/spring-boot-starter-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot/2.1.0.RC1/spring-boot-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.0.RC1/spring-boot-autoconfigure-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.0.RC1/spring-boot-starter-logging-2.1.0.RC1.jar, /Users/bruno/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, /Users/bruno/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, /Users/bruno/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.1/log4j-to-slf4j-2.11.1.jar, /Users/bruno/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar, /Users/bruno/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar, /Users/bruno/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar, /Users/bruno/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.0.RC1/spring-boot-starter-json-2.1.0.RC1.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.7/jackson-databind-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.7/jackson-datatype-jdk8-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.7/jackson-datatype-jsr310-2.9.7.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.7/jackson-module-parameter-names-2.9.7.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.0.RC1/spring-boot-starter-tomcat-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar, /Users/bruno/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.12/tomcat-embed-el-9.0.12.jar, /Users/bruno/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.12/tomcat-embed-websocket-9.0.12.jar, /Users/bruno/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar, /Users/bruno/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar, /Users/bruno/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar, /Users/bruno/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar, /Users/bruno/.m2/repository/org/springframework/spring-web/5.1.1.RELEASE/spring-web-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-beans/5.1.1.RELEASE/spring-beans-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-webmvc/5.1.1.RELEASE/spring-webmvc-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-aop/5.1.1.RELEASE/spring-aop-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-expression/5.1.1.RELEASE/spring-expression-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/2.1.0.RC1/spring-boot-starter-actuator-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.1.0.RC1/spring-boot-actuator-autoconfigure-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-actuator/2.1.0.RC1/spring-boot-actuator-2.1.0.RC1.jar, /Users/bruno/.m2/repository/io/micrometer/micrometer-core/1.1.0-rc.1/micrometer-core-1.1.0-rc.1.jar, /Users/bruno/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.jar, /Users/bruno/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-cosmosdb-spring-boot-starter/2.0.7/azure-cosmosdb-spring-boot-starter-2.0.7.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-spring-boot-starter/2.0.7/azure-spring-boot-starter-2.0.7.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.1.0.RC1/spring-boot-starter-validation-2.1.0.RC1.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-spring-boot/2.0.7/azure-spring-boot-2.0.7.jar, /Users/bruno/.m2/repository/com/microsoft/azure/spring-data-cosmosdb/2.0.5/spring-data-cosmosdb-2.0.5.jar, /Users/bruno/.m2/repository/com/microsoft/azure/azure-documentdb/1.16.2/azure-documentdb-1.16.2.jar, /Users/bruno/.m2/repository/com/fasterxml/uuid/java-uuid-generator/3.1.4/java-uuid-generator-3.1.4.jar, /Users/bruno/.m2/repository/org/json/json/20140107/json-20140107.jar, /Users/bruno/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar, /Users/bruno/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar, /Users/bruno/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar, /Users/bruno/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar, /Users/bruno/.m2/repository/joda-time/joda-time/2.10/joda-time-2.10.jar, /Users/bruno/.m2/repository/com/microsoft/azure/applicationinsights-core/2.0.1/applicationinsights-core-2.0.1.jar, /Users/bruno/.m2/repository/eu/infomas/annotation-detector/3.0.5/annotation-detector-3.0.5.jar, /Users/bruno/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar, /Users/bruno/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar, /Users/bruno/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar, /Users/bruno/.m2/repository/org/projectlombok/lombok/1.18.2/lombok-1.18.2.jar, /Users/bruno/.m2/repository/org/javatuples/javatuples/1.2/javatuples-1.2.jar, /Users/bruno/.m2/repository/com/github/derjust/spring-data-dynamodb/5.0.3/spring-data-dynamodb-5.0.3.jar, /Users/bruno/.m2/repository/org/springframework/spring-context/5.1.1.RELEASE/spring-context-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-tx/5.1.1.RELEASE/spring-tx-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/data/spring-data-commons/2.1.1.RELEASE/spring-data-commons-2.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-dynamodb/1.11.301/aws-java-sdk-dynamodb-1.11.301.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-s3/1.11.301/aws-java-sdk-s3-1.11.301.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-kms/1.11.301/aws-java-sdk-kms-1.11.301.jar, /Users/bruno/.m2/repository/com/amazonaws/aws-java-sdk-core/1.11.301/aws-java-sdk-core-1.11.301.jar, /Users/bruno/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar, /Users/bruno/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar, /Users/bruno/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.9.7/jackson-dataformat-cbor-2.9.7.jar, /Users/bruno/.m2/repository/com/amazonaws/jmespath-java/1.11.301/jmespath-java-1.11.301.jar, /Users/bruno/.m2/repository/javax/enterprise/cdi-api/1.2/cdi-api-1.2.jar, /Users/bruno/.m2/repository/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.jar, /Users/bruno/.m2/repository/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar, /Users/bruno/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.0.RC1/spring-boot-starter-test-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-test/2.1.0.RC1/spring-boot-test-2.1.0.RC1.jar, /Users/bruno/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.1.0.RC1/spring-boot-test-autoconfigure-2.1.0.RC1.jar, /Users/bruno/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar, /Users/bruno/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar, /Users/bruno/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar, /Users/bruno/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar, /Users/bruno/.m2/repository/junit/junit/4.12/junit-4.12.jar, /Users/bruno/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar, /Users/bruno/.m2/repository/org/mockito/mockito-core/2.23.0/mockito-core-2.23.0.jar, /Users/bruno/.m2/repository/net/bytebuddy/byte-buddy/1.9.1/byte-buddy-1.9.1.jar, /Users/bruno/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.1/byte-buddy-agent-1.9.1.jar, /Users/bruno/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar, /Users/bruno/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, /Users/bruno/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, /Users/bruno/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar, /Users/bruno/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar, /Users/bruno/.m2/repository/org/springframework/spring-core/5.1.1.RELEASE/spring-core-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-jcl/5.1.1.RELEASE/spring-jcl-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/springframework/spring-test/5.1.1.RELEASE/spring-test-5.1.1.RELEASE.jar, /Users/bruno/.m2/repository/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar]
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /Users/bruno/work/azure/demos/spring-todo-app/target/generated-test-sources/test-annotations to test-compile source roots:
+  /Users/bruno/work/azure/demos/spring-todo-app/src/test/java
+[DEBUG] New test-compile source roots:
+  /Users/bruno/work/azure/demos/spring-todo-app/src/test/java
+  /Users/bruno/work/azure/demos/spring-todo-app/target/generated-test-sources/test-annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.1.0.RC1:run (default-cli) < test-compile @ spring-todo-app <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.0.RC1:run (default-cli) @ spring-todo-app ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=323544, ConflictMarker.markTime=124232, ConflictMarker.nodeCount=215, ConflictIdSorter.graphTime=174445, ConflictIdSorter.topsortTime=65439, ConflictIdSorter.conflictIdCount=63, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2393408, ConflictResolver.conflictItemCount=152, DefaultDependencyCollector.collectTime=122052237, DefaultDependencyCollector.transformTime=3112872}
+[DEBUG] org.springframework.boot:spring-boot-maven-plugin:jar:2.1.0.RC1:
+[DEBUG]    org.springframework.boot:spring-boot-loader-tools:jar:2.1.0.RC1:compile
+[DEBUG]       org.springframework:spring-core:jar:5.1.1.RELEASE:compile
+[DEBUG]          org.springframework:spring-jcl:jar:5.1.1.RELEASE:compile
+[DEBUG]       org.apache.commons:commons-compress:jar:1.18:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:3.2.0:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:3.2.0:compile
+[DEBUG]       commons-io:commons-io:jar:2.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.22:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.3.9:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.8.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.3.9:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.3.9:compile
+[DEBUG]          org.apache.maven:maven-builder-support:jar:3.3.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.3.9:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.3.9:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.3.9:compile
+[DEBUG]          org.eclipse.aether:aether-spi:jar:1.0.2.v20150114:compile
+[DEBUG]       org.eclipse.aether:aether-impl:jar:1.0.2.v20150114:compile
+[DEBUG]       org.eclipse.aether:aether-api:jar:1.0.2.v20150114:compile
+[DEBUG]       org.eclipse.aether:aether-util:jar:1.0.2.v20150114:compile
+[DEBUG]       org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.2:compile
+[DEBUG]          javax.enterprise:cdi-api:jar:1.0:compile
+[DEBUG]             javax.annotation:jsr250-api:jar:1.0:compile
+[DEBUG]          org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.2:compile
+[DEBUG]       com.google.inject:guice:jar:no_aop:4.0:compile
+[DEBUG]          javax.inject:javax.inject:jar:1:compile
+[DEBUG]          aopalliance:aopalliance:jar:1.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.5.2:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.6:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.3.9:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.3.9:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:3.3.9:compile
+[DEBUG]    org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:3.6.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:3.0.1:compile
+[DEBUG]       org.iq80.snappy:snappy:jar:0.4:compile
+[DEBUG]       org.tukaani:xz:jar:1.8:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.1.0:compile
+[DEBUG]    org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]    org.apache.maven.plugins:maven-shade-plugin:jar:3.2.0:compile
+[DEBUG]       org.apache.maven.shared:maven-artifact-transfer:jar:0.10.0:compile
+[DEBUG]          commons-codec:commons-codec:jar:1.11:compile
+[DEBUG]          org.slf4j:slf4j-api:jar:1.7.25:compile
+[DEBUG]       org.ow2.asm:asm:jar:6.2.1:compile
+[DEBUG]       org.ow2.asm:asm-commons:jar:6.2.1:compile
+[DEBUG]          org.ow2.asm:asm-tree:jar:6.2.1:compile
+[DEBUG]          org.ow2.asm:asm-analysis:jar:6.2.1:compile
+[DEBUG]       org.jdom:jdom2:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.shared:maven-dependency-tree:jar:2.2:compile
+[DEBUG]       org.vafer:jdependency:jar:2.0:compile
+[DEBUG]          org.ow2.asm:asm-util:jar:6.2:compile
+[DEBUG]       com.google.guava:guava:jar:19.0:compile
+[DEBUG] Created new class realm plugin>org.springframework.boot:spring-boot-maven-plugin:2.1.0.RC1
+[DEBUG] Importing foreign packages into class realm plugin>org.springframework.boot:spring-boot-maven-plugin:2.1.0.RC1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.springframework.boot:spring-boot-maven-plugin:2.1.0.RC1
+[DEBUG]   Included: org.springframework.boot:spring-boot-maven-plugin:jar:2.1.0.RC1
+[DEBUG]   Included: org.springframework.boot:spring-boot-loader-tools:jar:2.1.0.RC1
+[DEBUG]   Included: org.springframework:spring-core:jar:5.1.1.RELEASE
+[DEBUG]   Included: org.springframework:spring-jcl:jar:5.1.1.RELEASE
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.18
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:3.2.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.22
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.8.1
+[DEBUG]   Included: org.apache.maven:maven-builder-support:jar:3.3.9
+[DEBUG]   Included: org.eclipse.aether:aether-util:jar:1.0.2.v20150114
+[DEBUG]   Included: javax.enterprise:cdi-api:jar:1.0
+[DEBUG]   Included: org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.2
+[DEBUG]   Included: com.google.inject:guice:jar:no_aop:4.0
+[DEBUG]   Included: aopalliance:aopalliance:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.6
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:3.6.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:3.0.1
+[DEBUG]   Included: org.iq80.snappy:snappy:jar:0.4
+[DEBUG]   Included: org.tukaani:xz:jar:1.8
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.1.0
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: org.apache.maven.plugins:maven-shade-plugin:jar:3.2.0
+[DEBUG]   Included: org.apache.maven.shared:maven-artifact-transfer:jar:0.10.0
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.11
+[DEBUG]   Included: org.ow2.asm:asm:jar:6.2.1
+[DEBUG]   Included: org.ow2.asm:asm-commons:jar:6.2.1
+[DEBUG]   Included: org.ow2.asm:asm-tree:jar:6.2.1
+[DEBUG]   Included: org.ow2.asm:asm-analysis:jar:6.2.1
+[DEBUG]   Included: org.jdom:jdom2:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.shared:maven-dependency-tree:jar:2.2
+[DEBUG]   Included: org.vafer:jdependency:jar:2.0
+[DEBUG]   Included: org.ow2.asm:asm-util:jar:6.2
+[DEBUG]   Included: com.google.guava:guava:jar:19.0
+[DEBUG] Configuring mojo org.springframework.boot:spring-boot-maven-plugin:2.1.0.RC1:run from plugin realm ClassRealm[plugin>org.springframework.boot:spring-boot-maven-plugin:2.1.0.RC1, parent: java.net.URLClassLoader@452b3a41]
+[DEBUG] Configuring mojo 'org.springframework.boot:spring-boot-maven-plugin:2.1.0.RC1:run' with basic configurator -->
+[DEBUG]   (f) addResources = false
+[DEBUG]   (f) agent = []
+[DEBUG]   (f) arguments = []
+[DEBUG]   (f) classesDirectory = /Users/bruno/work/azure/demos/spring-todo-app/target/classes
+[DEBUG]   (f) excludes = []
+[DEBUG]   (f) folders = []
+[DEBUG]   (f) includes = []
+[DEBUG]   (f) profiles = []
+[DEBUG]   (f) project = MavenProject: com.microsoft.springframework.samples:spring-todo-app:2.0-SNAPSHOT @ /Users/bruno/work/azure/demos/spring-todo-app/pom.xml
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) useTestClasspath = false
+[DEBUG] -- end configuration --
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::            (v2.1.0.RC1)
+
+2018-10-29 22:40:11.417  INFO 33010 --- [           main] c.m.s.samples.TodoApplication            : Starting TodoApplication on Brunos-MacBook-Pro.local with PID 33010 (/Users/bruno/work/azure/demos/spring-todo-app/target/classes started by brborges in /Users/bruno/work/azure/demos/spring-todo-app)
+2018-10-29 22:40:11.419  INFO 33010 --- [           main] c.m.s.samples.TodoApplication            : The following profiles are active: dynamodb
+2018-10-29 22:40:11.936  INFO 33010 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-10-29 22:40:11.989  INFO 33010 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 1 repository interfaces.
+2018-10-29 22:40:12.077  INFO 33010 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-10-29 22:40:12.090  WARN 33010 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'todoItemRepositoryDynamoDB' defined in null: Cannot register bean definition [Root bean: class [com.microsoft.azure.spring.data.cosmosdb.repository.support.DocumentDbRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] for bean 'todoItemRepositoryDynamoDB': There is already [Root bean: class [org.socialsignin.spring.data.dynamodb.repository.support.DynamoDBRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] bound.
+2018-10-29 22:40:12.098  INFO 33010 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-29 22:40:12.099 ERROR 33010 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'todoItemRepositoryDynamoDB', defined in null, could not be registered. A bean with that name has already been defined in null and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+[WARNING] 
+java.lang.reflect.InvocationTargetException
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run (AbstractRunMojo.java:558)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'todoItemRepositoryDynamoDB' defined in null: Cannot register bean definition [Root bean: class [com.microsoft.azure.spring.data.cosmosdb.repository.support.DocumentDbRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] for bean 'todoItemRepositoryDynamoDB': There is already [Root bean: class [org.socialsignin.spring.data.dynamodb.repository.support.DynamoDBRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] bound.
+    at org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition (DefaultListableBeanFactory.java:894)
+    at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn (RepositoryConfigurationDelegate.java:173)
+    at org.springframework.boot.autoconfigure.data.AbstractRepositoryConfigurationSourceSupport.registerBeanDefinitions (AbstractRepositoryConfigurationSourceSupport.java:61)
+    at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1 (ConfigurationClassBeanDefinitionReader.java:364)
+    at java.util.LinkedHashMap.forEach (LinkedHashMap.java:684)
+    at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars (ConfigurationClassBeanDefinitionReader.java:363)
+    at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass (ConfigurationClassBeanDefinitionReader.java:145)
+    at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions (ConfigurationClassBeanDefinitionReader.java:117)
+    at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions (ConfigurationClassPostProcessor.java:327)
+    at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry (ConfigurationClassPostProcessor.java:232)
+    at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors (PostProcessorRegistrationDelegate.java:275)
+    at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors (PostProcessorRegistrationDelegate.java:95)
+    at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors (AbstractApplicationContext.java:691)
+    at org.springframework.context.support.AbstractApplicationContext.refresh (AbstractApplicationContext.java:528)
+    at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh (ServletWebServerApplicationContext.java:140)
+    at org.springframework.boot.SpringApplication.refresh (SpringApplication.java:771)
+    at org.springframework.boot.SpringApplication.refreshContext (SpringApplication.java:395)
+    at org.springframework.boot.SpringApplication.run (SpringApplication.java:314)
+    at org.springframework.boot.SpringApplication.run (SpringApplication.java:1256)
+    at org.springframework.boot.SpringApplication.run (SpringApplication.java:1244)
+    at com.microsoft.springframework.samples.TodoApplication.main (TodoApplication.java:15)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run (AbstractRunMojo.java:558)
+    at java.lang.Thread.run (Thread.java:748)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.310 s
+[INFO] Finished at: 2018-10-29T22:40:12-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.1.0.RC1:run (default-cli) on project spring-todo-app: An exception occurred while running. null: InvocationTargetException: Invalid bean definition with name 'todoItemRepositoryDynamoDB' defined in null: Cannot register bean definition [Root bean: class [com.microsoft.azure.spring.data.cosmosdb.repository.support.DocumentDbRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] for bean 'todoItemRepositoryDynamoDB': There is already [Root bean: class [org.socialsignin.spring.data.dynamodb.repository.support.DynamoDBRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] bound. -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.1.0.RC1:run (default-cli) on project spring-todo-app: An exception occurred while running. null
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:213)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:154)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:146)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:954)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:289)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:229)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:415)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:356)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.apache.maven.wrapper.BootstrapMainStarter.start (BootstrapMainStarter.java:39)
+    at org.apache.maven.wrapper.WrapperExecutor.execute (WrapperExecutor.java:122)
+    at org.apache.maven.wrapper.MavenWrapperMain.main (MavenWrapperMain.java:50)
+Caused by: org.apache.maven.plugin.MojoExecutionException: An exception occurred while running. null
+    at org.springframework.boot.maven.AbstractRunMojo$IsolatedThreadGroup.rethrowUncaughtException (AbstractRunMojo.java:526)
+    at org.springframework.boot.maven.RunMojo.runWithMavenJvm (RunMojo.java:97)
+    at org.springframework.boot.maven.AbstractRunMojo.run (AbstractRunMojo.java:249)
+    at org.springframework.boot.maven.AbstractRunMojo.execute (AbstractRunMojo.java:198)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:208)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:154)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:146)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:954)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:289)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:229)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:415)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:356)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.apache.maven.wrapper.BootstrapMainStarter.start (BootstrapMainStarter.java:39)
+    at org.apache.maven.wrapper.WrapperExecutor.execute (WrapperExecutor.java:122)
+    at org.apache.maven.wrapper.MavenWrapperMain.main (MavenWrapperMain.java:50)
+Caused by: java.lang.reflect.InvocationTargetException
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run (AbstractRunMojo.java:558)
+    at java.lang.Thread.run (Thread.java:748)
+Caused by: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'todoItemRepositoryDynamoDB' defined in null: Cannot register bean definition [Root bean: class [com.microsoft.azure.spring.data.cosmosdb.repository.support.DocumentDbRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] for bean 'todoItemRepositoryDynamoDB': There is already [Root bean: class [org.socialsignin.spring.data.dynamodb.repository.support.DynamoDBRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] bound.
+    at org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition (DefaultListableBeanFactory.java:894)
+    at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn (RepositoryConfigurationDelegate.java:173)
+    at org.springframework.boot.autoconfigure.data.AbstractRepositoryConfigurationSourceSupport.registerBeanDefinitions (AbstractRepositoryConfigurationSourceSupport.java:61)
+    at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1 (ConfigurationClassBeanDefinitionReader.java:364)
+    at java.util.LinkedHashMap.forEach (LinkedHashMap.java:684)
+    at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars (ConfigurationClassBeanDefinitionReader.java:363)
+    at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass (ConfigurationClassBeanDefinitionReader.java:145)
+    at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions (ConfigurationClassBeanDefinitionReader.java:117)
+    at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions (ConfigurationClassPostProcessor.java:327)
+    at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry (ConfigurationClassPostProcessor.java:232)
+    at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors (PostProcessorRegistrationDelegate.java:275)
+    at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors (PostProcessorRegistrationDelegate.java:95)
+    at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors (AbstractApplicationContext.java:691)
+    at org.springframework.context.support.AbstractApplicationContext.refresh (AbstractApplicationContext.java:528)
+    at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh (ServletWebServerApplicationContext.java:140)
+    at org.springframework.boot.SpringApplication.refresh (SpringApplication.java:771)
+    at org.springframework.boot.SpringApplication.refreshContext (SpringApplication.java:395)
+    at org.springframework.boot.SpringApplication.run (SpringApplication.java:314)
+    at org.springframework.boot.SpringApplication.run (SpringApplication.java:1256)
+    at org.springframework.boot.SpringApplication.run (SpringApplication.java:1244)
+    at com.microsoft.springframework.samples.TodoApplication.main (TodoApplication.java:15)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run (AbstractRunMojo.java:558)
+    at java.lang.Thread.run (Thread.java:748)
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
