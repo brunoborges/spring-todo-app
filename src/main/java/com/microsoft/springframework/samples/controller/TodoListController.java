@@ -48,6 +48,7 @@ public class TodoListController {
         try {
             return new ResponseEntity<TodoItem>(todoItemRepository.findById(index).get(), HttpStatus.OK);
         } catch (Exception e) {
+            e.printStackTrace();
             return new ResponseEntity<String>(index + " not found", HttpStatus.NOT_FOUND);
         }
     }
@@ -61,6 +62,7 @@ public class TodoListController {
         try {
             return new ResponseEntity<>(todoItemRepository.findAll(), HttpStatus.OK);
         } catch (Exception e) {
+            e.printStackTrace();
             return new ResponseEntity<>("Nothing found", HttpStatus.NOT_FOUND);
         }
     }
@@ -72,10 +74,11 @@ public class TodoListController {
     public ResponseEntity<String> addNewTodoItem(@RequestBody TodoItem item) {
         System.out.println(new Date() + " POST ======= /api/todolist ======= " + item);
         try {
-            item.setID(UUID.randomUUID().toString());
+            item.setId(UUID.randomUUID().toString());
             todoItemRepository.save(item);
-            return new ResponseEntity<String>(item.getID(), HttpStatus.CREATED);
+            return new ResponseEntity<String>(item.getId(), HttpStatus.CREATED);
         } catch (Exception e) {
+            e.printStackTrace();
             return new ResponseEntity<String>("Entity creation failed", HttpStatus.CONFLICT);
         }
     }
@@ -87,10 +90,11 @@ public class TodoListController {
     public ResponseEntity<String> updateTodoItem(@RequestBody TodoItem item) {
         System.out.println(new Date() + " PUT ======= /api/todolist ======= " + item);
         try {
-            todoItemRepository.deleteById(item.getID());
+            todoItemRepository.deleteById(item.getId());
             todoItemRepository.save(item);
             return new ResponseEntity<String>("Entity updated", HttpStatus.OK);
         } catch (Exception e) {
+            e.printStackTrace();
             return new ResponseEntity<String>("Entity updating failed", HttpStatus.NOT_FOUND);
         }
     }
@@ -106,6 +110,7 @@ public class TodoListController {
             todoItemRepository.deleteById(id);
             return new ResponseEntity<String>("Entity deleted", HttpStatus.OK);
         } catch (Exception e) {
+            e.printStackTrace();
             return new ResponseEntity<String>("Entity deletion failed", HttpStatus.NOT_FOUND);
         }
 

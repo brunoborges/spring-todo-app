@@ -10,14 +10,14 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Profile({"local"})
+@Profile("local")
 public class TodoItemRepositoryLocal implements ITodoItemRepository {
 
     private Map<String, TodoItem> data = new HashMap<>();
 
     @Override
     public TodoItem save(TodoItem entity) {
-        return data.put(entity.getID(), entity);
+        return data.put(entity.getId(), entity);
     }
 
     @Override

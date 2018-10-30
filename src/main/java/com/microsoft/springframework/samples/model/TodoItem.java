@@ -33,12 +33,12 @@ public class TodoItem {
         return finished;
     }
 
-    public void setFinish(boolean finished) {
+    public void setFinished(boolean finished) {
         this.finished = finished;
     }
 
     @DynamoDBAttribute
-    public String getDescription() {
+public String getDescription() {
         return description;
     }
 
@@ -56,11 +56,11 @@ public class TodoItem {
     }
 
     @DynamoDBHashKey
-    public String getID() {
+    public String getId() {
         return id;
     }
 
-    public void setID(String id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -75,7 +75,7 @@ public class TodoItem {
         final TodoItem group = (TodoItem) o;
         return Objects.equals(this.getDescription(), group.getDescription())
                 && Objects.equals(this.getOwner(), group.getOwner())
-                && Objects.equals(this.getID(), group.getID());
+                && Objects.equals(this.getId(), group.getId());
     }
 
     @Override

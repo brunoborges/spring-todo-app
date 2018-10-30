@@ -9,7 +9,6 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperConfig;
-import com.microsoft.springframework.samples.dao.TodoItemRepositoryDynamoDB;
 import org.socialsignin.spring.data.dynamodb.repository.config.EnableDynamoDBRepositories;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -53,7 +52,8 @@ public class DynamoDBConfig {
     @Bean
     public AmazonDynamoDB amazonDynamoDB() {
         return AmazonDynamoDBClientBuilder.standard()
-                .withCredentials(amazonAWSCredentialsProvider()).withRegion(Regions.US_EAST_1)
+                .withCredentials(amazonAWSCredentialsProvider())
+                .withRegion(Regions.US_WEST_1)
                 .build();
     }
 

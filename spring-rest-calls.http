@@ -12,7 +12,8 @@ Content-Type: application/json
 
 {
     "description":"testing",
-    "owner":"rest client"
+    "owner":"rest client",
+    "finished":"false"
 }
 
 ### UPDATE a TODO item
@@ -21,7 +22,8 @@ Content-Type: application/json
 
 {
     "id":"{{create.response.body.*}}",
-    "description":"testing updated"
+    "description":"testing updated",
+    "finished":"false"
 }
 
 ### DELETE a TODO item
